@@ -163,6 +163,18 @@ header .header__conteiner .header__acount .acount p {
   font-family: AEONIKPROTRIALFONT;
 }
 
+@media (max-width: 768px) {
+  header .header__conteiner {
+    max-width: 768px;
+  }
+}
+@media (max-width: 576px) {
+  header .header__conteiner {
+    max-width: 576px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .Overview {
   display: flex;
   justify-content: space-between;
@@ -188,6 +200,11 @@ header .header__conteiner .header__acount .acount p {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .Overview {
+    max-width: 768px;
+  }
+}
 .info {
   max-width: 1120px;
   margin: auto;
@@ -260,6 +277,156 @@ header .header__conteiner .header__acount .acount p {
   letter-spacing: 0.28px;
 }
 
+@media (max-width: 768px) {
+  .info {
+    max-width: 1120px;
+    margin: auto;
+  }
+  .info .card {
+    margin-left: 16px;
+    display: flex;
+    width: 117px;
+    height: 196px;
+    padding: 18px 43px 24px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 10px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.34);
+  }
+  .info .card .Total {
+    color: #797979;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    font-family: AEONIKPROTRIALFONT;
+  }
+  .info .card .graf {
+    color: #060606;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    font-family: AEONIKPROTRIALFONT;
+    position: relative;
+  }
+  .info .card .graf::after {
+    content: "";
+    background-image: url("./../../img/info/up.svg");
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: -14px;
+    top: 2px;
+  }
+  .info .card .graf__down {
+    color: #060606;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    font-family: AEONIKPROTRIALFONT;
+    position: relative;
+  }
+  .info .card .graf__down::after {
+    content: "";
+    background-image: url("./../../img/info/down.svg");
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: -14px;
+    top: 2px;
+  }
+  .info .card h4 {
+    color: #060606;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+    font-family: AEONIKPROTRIALFONT;
+    letter-spacing: 0.28px;
+  }
+}
+@media (max-width: 576px) {
+  .info {
+    max-width: 1120px;
+    margin: auto;
+  }
+  .info .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info .card {
+    margin-left: 16px;
+    display: flex;
+    width: 377px;
+    height: 196px;
+    padding: 18px 43px 24px 18px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.34);
+  }
+  .info .card .Total {
+    color: #797979;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    font-family: AEONIKPROTRIALFONT;
+  }
+  .info .card .graf {
+    color: #060606;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    font-family: AEONIKPROTRIALFONT;
+    position: relative;
+  }
+  .info .card .graf::after {
+    content: "";
+    background-image: url("./../../img/info/up.svg");
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: -14px;
+    top: 2px;
+  }
+  .info .card .graf__down {
+    color: #060606;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    font-family: AEONIKPROTRIALFONT;
+    position: relative;
+  }
+  .info .card .graf__down::after {
+    content: "";
+    background-image: url("./../../img/info/down.svg");
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: -14px;
+    top: 2px;
+  }
+  .info .card h4 {
+    color: #060606;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+    font-family: AEONIKPROTRIALFONT;
+    letter-spacing: 0.28px;
+  }
+}
 .main__bottom {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -276,6 +443,40 @@ header .header__conteiner .header__acount .acount p {
   background: rgba(255, 255, 255, 0.34);
 }
 
+@media (max-width: 768px) {
+  .main__bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-width: 768px;
+    height: 750px;
+    gap: 30px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 16px;
+  }
+  .main__bottom .Project_ {
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.34);
+  }
+}
+@media (max-width: 576px) {
+  .main__bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-width: 576px;
+    height: 750px;
+    gap: 30px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 16px;
+  }
+  .main__bottom .Project_ {
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.34);
+  }
+}
 .Project__summary {
   padding: 18px 18px 10px 18px;
   flex-direction: column;
@@ -518,7 +719,7 @@ header .header__conteiner .header__acount .acount p {
   display: inline-flex;
   padding: 18px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 30px;
 }
 .Progress .Progress__title {
