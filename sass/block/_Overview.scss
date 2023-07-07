@@ -1,0 +1,23 @@
+.Overview{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 20px auto;
+    h2{
+        color:$color_mane;
+        font-family: $mane_font;
+        @include font_settings (400,22px,normal);
+        letter-spacing: 0.22px;
+    }
+    .last__day{
+        height: 38px;
+        width: 135px;
+        border-radius: 17px;
+        background: #FFF;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+}

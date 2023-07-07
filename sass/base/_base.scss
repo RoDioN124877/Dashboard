@@ -1,0 +1,8 @@
+@mixin font_settings ($fw,$fs,$lh) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+body{
+    background: #EBDFD7;
+}

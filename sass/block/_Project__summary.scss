@@ -1,0 +1,212 @@
+.Project__summary{
+    padding: 18px 18px 10px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    .top__summary__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 654px;
+    height: 34px;
+    h2{
+    letter-spacing: 0.16px;
+    color:$color_mane;
+    font-family: $mane_font;
+    @include font_settings (400,16px,normal);
+    }
+    .top__summary__title__buttons{
+        display: flex;
+        gap: 8px;    
+        max-width: 364px;
+        div{
+            display: flex;
+            height: 34px;
+            padding: 2px 14px;
+            align-items: center;
+            gap: 10px;
+            border-radius: 17px;
+            background: #FFF;
+            color:$color_mane;
+            font-family: $mane_font;
+            @include font_settings (400,14px,normal);
+            letter-spacing: 0.14px;
+        }
+    }
+}
+table{
+  margin-top: 30px;
+}
+}
+.defolt__txt__ps{
+    @include font_settings (400,14px,normal);
+    color:$color_mane;
+    font-family: $mane_font; 
+    margin-left: 8px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+.progress-bar {
+    margin: auto;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, rgba(235, 223, 215) 79%, transparent 80% 100%),
+      conic-gradient(#1A932E 100%, pink 0);    
+      &:before {
+        content: "100%";
+        text-align: center;
+        letter-spacing: -0.18px;
+        color:$color_mane;
+        font-family: $mane_font;
+        @include font_settings (400,9px,10px);
+      }
+  }
+  .progress-bar2 {
+    margin: auto;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 
+      radial-gradient(closest-side, rgba(235, 223, 215) 79%, transparent 80% 100%),
+      conic-gradient(#E5AE21 35%, pink 0);    
+      &:before {
+        content: "35%";
+        text-align: center;
+        letter-spacing: -0.18px;
+        color:$color_mane;
+        font-family: $mane_font;
+        @include font_settings (400,9px,10px);
+      }
+  }
+  .progress-bar3 {
+    margin: auto;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 
+      radial-gradient(closest-side, rgba(235, 223, 215) 79%, transparent 80% 100%),
+      conic-gradient(#EE201C 68%, pink 0);    
+      &:before {
+        content: "68%";
+        text-align: center;
+        letter-spacing: -0.18px;
+        color:$color_mane;
+        font-family: $mane_font;
+        @include font_settings (400,9px,10px);
+      }
+  }
+  .progress-bar4 {
+    margin: auto;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 
+      radial-gradient(closest-side, rgba(235, 223, 215) 79%, transparent 80% 100%),
+      conic-gradient(#1A932E 100%, pink 0);    
+      &:before {
+        content: "100%";
+        text-align: center;
+        letter-spacing: -0.18px;
+        color:$color_mane;
+        font-family: $mane_font;
+        @include font_settings (400,9px,10px);
+      }
+  }
+  .progress-bar5 {
+    margin: auto;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 
+      radial-gradient(closest-side, rgba(235, 223, 215) 79%, transparent 80% 100%),
+      conic-gradient(#E65F2B 50%, pink 0);    
+      &:before {
+        content: "50%";
+        text-align: center;
+        letter-spacing: -0.18px;
+        color:$color_mane;
+        font-family: $mane_font;
+        @include font_settings (400,9px,10px);
+      }
+  }
+  .progress_td{
+    padding: 0;
+  }
+  .ttl__txt__ps{
+    letter-spacing: 0.16px;
+    color:$color_mane;
+    font-family: $mane_font;
+    @include font_settings (400,16px,normal);
+    padding-bottom: 25px;
+  }
+
+.Completed{
+  color: #1A932E;
+  letter-spacing: 0.12px;
+  font-family: $mane_font;
+  @include font_settings (400,12px,normal);
+  display: inline-flex;
+  padding: 5px 8px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: rgba(26, 147, 46, 0.18);
+  margin: 0;
+}
+.Delayed	
+{
+  color: #DFA510;
+  letter-spacing: 0.12px;
+  font-family: $mane_font;
+  @include font_settings (400,12px,normal);
+  display: inline-flex;
+  padding: 5px 8px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: rgba(226, 177, 51, 0.18);
+  margin: 0;
+}
+.risk{
+  color: #EE201C;
+  letter-spacing: 0.12px;
+  font-family: $mane_font;
+  @include font_settings (400,12px,normal);
+  display: inline-flex;
+  padding: 5px 8px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: rgba(238, 32, 28, 0.18);
+  margin: 0;
+}
+.going{
+  color: #E65F2B;
+  letter-spacing: 0.12px;
+  font-family: $mane_font;
+  @include font_settings (400,12px,normal);
+  display: inline-flex;
+  padding: 5px 8px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  background: rgba(230, 95, 43, 0.18);
+  margin: 0;
+}

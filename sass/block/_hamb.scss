@@ -1,0 +1,176 @@
+#mane
+{
+    background-color: $color_mane;
+    height: 100%;
+    width: 200px;
+    position:fixed;
+    transition: 1s;
+    display: none;
+    padding: 10px 46px 0px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+    .ham__block{
+        display: flex;
+        max-width: 160px;
+        padding: 13px 26px 13px 16px;
+        align-items: center;
+        gap: 16px;
+        p{
+            color: #F1F1F1;
+            font-family: $mane_font;
+            @include font_settings(400,14px,normal);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+    .ham__block__1{
+        p{
+            &::before{
+            content: '';
+            background: url('../../img/ham/icon1.svg');
+            display: block;
+            width: 22px;
+            height: 22px;
+            }
+        }
+    }
+    .ham__block__2{
+        p{
+            &::before{
+            content: '';
+            background: url('../../img/ham/icon2.svg');
+            display: block;
+            width: 22px;
+            height: 22px;
+            }
+        }
+    }
+    .ham__block__3{
+        p{
+            &::before{
+            content: '';
+            background: url('../../img/ham/icon3.svg');
+            display: block;
+            width: 22px;
+            height: 22px;
+            }
+        }
+    }
+    .ham__block__4{
+        p{
+            &::before{
+            content: '';
+            background: url('../../img/ham/icon4.svg');
+            display: block;
+            width: 22px;
+            height: 22px;
+            }
+        }
+    }
+    .ham__block__5{
+        p{
+            &::before{
+            content: '';
+            background: url('../../img/ham/icon5.svg');
+            display: block;
+            width: 22px;
+            height: 22px;
+            }
+        }
+    }
+    .ham__block__6{
+        p{
+            &::before{
+            content: '';
+            background: url('../../img/ham/icon6.svg');
+            display: block;
+            width: 22px;
+            height: 22px;
+            }
+        }
+    }
+    .ham__block__7{
+        p{
+            &::before{
+            content: '';
+            background: url('../../img/ham/icon7.svg');
+            display: block;
+            width: 22px;
+            height: 22px;
+            }
+        }
+    }
+    .ham__block__8{
+        p{
+            &::before{
+            content: '';
+            background: url('../../img/ham/icon8.svg');
+            display: block;
+            width: 22px;
+            height: 22px;
+            }
+        }
+    }
+    .crt__pj{
+        display: flex;
+        max-width: 184px;
+        height: 48px;
+        padding: 5px 20px 5px 7px;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 24px;
+        background: #FFF;
+        button{
+            background-image: url('../../img/ham/btn.svg');
+            width: 34px;
+            height: 34px;
+        }
+        p{
+            color: #171717;
+            font-family: $mane_font;
+            @include font_settings(400,14px,normal);
+            width: 76px;
+        }  
+    }
+    .Dashboard{
+        display: flex;
+        max-width: 184px;
+        padding: 13px 26px 13px 16px;
+        align-items: center;
+        gap: 16px;
+        border-radius: 24px;
+        background: #FFF;
+        a{
+            color: #E65F2B;
+            font-family: $mane_font;
+            @include font_settings(400,14px,normal);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            &::before{
+                content: '';
+                background: url('../../img/ham/icons.svg');
+                display: block;
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+}
+#open_btn{
+    cursor: pointer;
+}
+#exit_btn{ 
+    cursor: pointer;
+    font-family: $mane_font;
+    color: red;
+    text-align: end;
+    @include font_settings(400,40px,normal);
+    transition: 1s;
+
+}

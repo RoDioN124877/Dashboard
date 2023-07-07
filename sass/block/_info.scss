@@ -1,0 +1,64 @@
+.info{
+    max-width: 1120px;
+    margin: auto;
+    .card{
+        margin-left: 16px;
+        display: flex;
+        width: 117px;
+        height: 196px;
+        padding: 18px 43px 24px 18px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content:space-evenly;
+        gap: 10px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.34);
+        .Total{
+            color: #797979;
+            @include font_settings (400,14px,normal);
+            font-family: $mane_font;
+        }
+        .graf{
+            color: $color_mane;
+            letter-spacing: 0.2px;
+            @include font_settings (400,14px,normal);
+            font-family: $mane_font;
+            position: relative;
+            &::after{
+                content: '';
+                background-image: url('./../../img/info/up.svg');
+                display: block;
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                left: -14px;
+                top: 2px;
+            }
+        }
+        .graf__down{
+            color: $color_mane;
+            letter-spacing: 0.2px;
+            @include font_settings (400,14px,normal);
+            font-family: $mane_font;
+            position: relative;
+            &::after{
+                content: '';
+                background-image: url('./../../img/info/down.svg');
+                display: block;
+                width: 14px;
+                height: 14px;
+                position: absolute;
+                left: -14px;
+                top: 2px;
+            }
+        }
+        h4{
+            color: $color_mane;
+            letter-spacing: 0.2px;
+            @include font_settings (400,28px,normal);
+            font-family: $mane_font;
+            letter-spacing: 0.28px;
+        }
+    }
+    
+}

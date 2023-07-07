@@ -1,0 +1,51 @@
+.Progress{
+    display: inline-flex;
+    padding: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    .Progress__title{
+        display: flex;
+        justify-content: space-between;
+        width: 364px;
+        margin: auto;
+        .Project__btn__5{
+            border-radius: 17px;
+            background: #FFF;
+            display: flex;
+            height: 34px;
+            padding: 2px 14px;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    .Progress__footer{
+        display: flex;
+        justify-content: space-between;
+        width: 364px;
+        .cg{
+            color: #1A932E;
+        }
+        .cy{
+            color: #DFA510;
+        }
+        .cr{
+            color: #E65F2B;
+        }
+        div{
+            h2{
+                font-family: $mane_font;
+                color: $color_mane;
+                @include font_settings(400,22px,normal);
+                letter-spacing: 0.22px;
+            }
+            h6{
+                color: #797979;
+                font-family: $mane_font;
+                @include font_settings(400,14px,normal);
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,15 @@
+.main__bottom{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 1120px;
+    height: 750px;
+    gap: 30px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 16px;
+    .Project_{
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.34);
+    }
+}

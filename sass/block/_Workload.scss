@@ -1,0 +1,65 @@
+.Workload{
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .Workload__title{
+        padding-top:8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            color: $color_mane;
+            font-family: $mane_font;
+            @include font_settings(400,16px,normal);
+        }
+        .Workload__btn{
+            display: flex;
+            height: 34px;
+            padding: 2px 14px;
+            align-items: center;
+            gap: 10px;
+            border-radius: 17px;
+            background: #FFF;
+            color: $color_mane;
+            font-family: $mane_font;
+            @include font_settings(400,14px,normal);
+        }
+    }
+    .w__conteiner{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        .w__col{
+            display: flex;
+            flex-direction: column;
+            .w__mane{
+                width: 30px;
+                height: 30px;
+                background-color: $color_mane;
+                color: #FFF;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: $mane_font;
+                @include font_settings(400,14px,normal);
+                letter-spacing: 0.14px;
+            }
+            .w__support{
+                width: 30px;
+                height: 30px;
+                flex-shrink: 0;
+                border: 1px solid $color_mane;
+                border-radius: 50%;
+            }
+            p{
+                color: #797979;
+                text-align: center;
+                font-family: $mane_font;
+                @include font_settings(400,12px,normal);
+                letter-spacing: 0.12px;
+            }
+        }
+    }
+}
